@@ -532,6 +532,9 @@ function getSetlistBannerUrl(setlistName) {
   if (lowerName.includes('pdmk') || lowerName.includes('seleksi')) {
     return 'banner/SELEKSI PDMK.jpg';
   }
+  if (lowerName.includes('the challengers') || lowerName.includes('seleksi')) {
+    return 'banner/THE CHALLENGERS.jpg';
+  }
   if (lowerName.includes('z vs alpha') || lowerName.includes('alpha')) {
     return 'banner/Z VS ALPHA.jpg';
   }
@@ -785,7 +788,7 @@ function renderMembersGrid(membersData, birthdayMember, graduationMember) {
 }
 
 function openMemberPage(memberName) {
-  window.location.href = 'riwayat.html?member=' + encodeURIComponent(memberName);
+  window.location.href = 'show.html?member=' + encodeURIComponent(memberName);
 }
 
 function showNoShowsMessage() {
